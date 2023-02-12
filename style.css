@@ -1,0 +1,206 @@
+/* custome css and media query for small device moile */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto' , sans-serif;
+}
+/* header section */
+header{
+    background-color: #f7fafc;
+}
+.container{
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 .75rem;
+
+}
+/* nav section */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0.8rem;
+}
+nav h1{
+    font-size: 1.875rem;
+    font-weight: 500;
+}
+ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+ul li a{
+    text-decoration: none;
+    color: #000;
+    margin-left: 1rem;
+    font-size: 1.275rem;
+    cursor: pointer;
+}
+.banner{
+    padding: 5rem 0;
+    padding-bottom: 8rem;
+    text-align: center;
+}
+.banner h2{
+    font-size: 3rem;
+    line-height: 4.5rem;
+}
+.banner span{
+    display: block;
+    color: #0670a4;
+}
+.banner p{
+    font-size: 1.5rem;
+    opacity: 0.6;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+}
+.banner button{
+    background-color: #0670a4;
+    color: #fff;
+    font-size: 1.25rem;
+    padding: 1rem 1.5rem;
+    outline: none;
+    border: none;
+    border-radius: 0.35rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+.banner button:hover{
+    opacity: 0.9;
+}
+/* main section */
+main{
+    padding: 4rem 0;
+    background-color: #fff;
+}
+.top-section{
+    text-align: center;
+    margin-bottom: 4rem;
+
+}
+.top-section h2{
+    font-size: 2.25rem;
+}
+.top-section p{
+    font-size: 1.25rem;
+    line-height: 2.25rem;
+    opacity: 0.6;
+    margin-top: 1rem;
+    padding: 0  5rem;
+}
+.top-post{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 4rem;
+}
+.col{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 0 1.5rem;
+
+}
+.col h3{
+    font-size: 1.87rem;
+    font-weight: 400;
+}
+.col p{
+    font-size: 1.25rem;
+    line-height: 2.25rem;
+    opacity: 0.6;
+    margin-top: 1.5rem;
+}
+.col img{
+
+    margin: 1.5rem 1.15rem;
+    max-width: 100%;
+    object-fit: cover;
+}
+/* contact section */
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: #e6f6fe;
+    border-radius: 0.37rem;
+}
+.content p{
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+.content span{
+    display: block;
+    color: #0670a4;
+    margin-top: 1rem;
+}
+.content button{
+    font-size: 1.25rem;
+    padding: 0.75rem 1rem;
+    background-color: #0670a4;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 0.375rem;
+    cursor: pointer;
+}
+.content button:hover{
+    opacity: 0.9;
+}
+/* footer section */
+footer{
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 0;
+    background-color: #f7fafc;
+}
+footer ul{
+    justify-content: center;
+}
+footer ul li{
+    margin: 0.1rem;
+}
+footer .social{
+    margin: 1.15rem 0;
+    text-align: center;
+}
+footer .social a{
+    font-size: 1.5rem;
+    color: #4b4c4d;
+    margin: 0 0.3rem;
+    opacity: 0.75;
+}
+footer p{
+    text-align: center;
+    opacity: 0.9;
+}
+
+
+
+/* Small device media Query for Mobile  */
+
+@media (max-width:651px){
+    .top-post p{
+        padding: 0;
+    }
+    .top-post{
+        flex-direction: column;
+    }
+    .col{
+        width: 100%;
+    }
+    .content{
+        padding: 1rem;
+        text-align: center;
+        flex-direction: column;
+    }
+}
